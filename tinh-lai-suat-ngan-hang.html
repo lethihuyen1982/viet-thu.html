@@ -11,9 +11,13 @@
 <body>
     <script>
         let loan = prompt("Nhập số tiền vay:");
+        loan=parseInt(loan);
         let interest = prompt("Nhập lãi suất");
+        interest=parseInt(interest);
         let years = prompt("Số năm vay:");
+        years=parseInt(years);
         let interest_amount = loan + years * loan * interest;
+        interest_amount=parseInt(interest_amount);
         alert("Tiền lãi sau " + years + "năm là: " + interest_amount);
     </script>
 </body>
